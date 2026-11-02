@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil's CI/CD Website</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #0f1115;
+      color: #e8eaed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      line-height: 1.6;
+    }
+    .card {
+      background: #171a21;
+      border: 1px solid #2a2f3a;
+      border-radius: 16px;
+      padding: 40px 32px;
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      color: #ff9900;
+      border: 1px solid rgba(255, 153, 0, 0.4);
+      background: rgba(255, 153, 0, 0.1);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+    h1 { font-size: 32px; margin-bottom: 12px; }
+    h1 span { color: #ff9900; }
+    p { color: #9aa0a6; margin-bottom: 24px; }
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .step {
+      border: 1px solid #2a2f3a;
+      border-radius: 8px;
+      padding: 8px 12px;
+    }
+    .arrow { color: #ff9900; align-self: center; }
+    .version { margin-top: 24px; font-size: 13px; color: #9aa0a6; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Deployed with CI/CD</div>
+    <h1>Hello from <span>Nikhil</span></h1>
+    <p>This website is deployed automatically using AWS CodePipeline, CodeBuild and S3.</p>
+    <div class="flow">
+      <div class="step">GitHub</div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">CodePipeline</div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">CodeBuild</div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">S3</div>
+    </div>
+    <div class="version">Version 1</div>
+  </main>
+</body>
+</html>
